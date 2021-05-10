@@ -1,6 +1,7 @@
 package com.example.test2;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
@@ -20,10 +21,9 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity { //implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
    // public CardView card1, card2, card3, card4, card5, card6, card7, card8, card9, card10;
-    private ViewPager2 viewPager2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,54 +55,13 @@ public class MainActivity extends AppCompatActivity { //implements View.OnClickL
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         bottomNav.setOnNavigationItemSelectedListener(navListener);
 
-        Fragment fragment = new HomeFragment();
+
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                 new HomeFragment()).commit();
 
-        viewPager2 = findViewById(R.id.viewPagerImageSlider);
-
-        //Preparing the list of images from drawable
-        List<SliderItem> sliderItems = new ArrayList<>();
-        sliderItems.add(new SliderItem(R.drawable.niv1));
-        sliderItems.add(new SliderItem(R.drawable.niv3));
-
-
-        viewPager2.setAdapter(new SliderAdapter(sliderItems, viewPager2));
-
-        viewPager2.setClipToPadding(false);
-        viewPager2.setClipChildren(false);
-        viewPager2.setOffscreenPageLimit(3);
-        viewPager2.getChildAt(0).setOverScrollMode(RecyclerView.OVER_SCROLL_NEVER);
-
-        CompositePageTransformer compositePageTransformer = new CompositePageTransformer();
-        compositePageTransformer.addTransformer(new MarginPageTransformer(40));
-        compositePageTransformer.addTransformer(new ViewPager2.PageTransformer() {
-            @Override
-            public void transformPage(@NonNull View page, float position) {
-                float r = 1 - Math.abs(position);
-                page.setScaleY(0.85f + r * 0.15f);
-            }
-        });
-
-        viewPager2.setPageTransformer(compositePageTransformer);
-
     }
 
-//    @Override
-//    public void onClick (View v) {
-//        Intent i;
-//
-//        switch (v.getId()) {
-//            case R.id.c1 :
-//                i = new Intent(this,MadAffald.class);
-//                startActivity(i);
-//                break;
-//
-//            case R.id.c2 :
-//                i = new Intent(this,Papir.class);
-//                startActivity(i);
-//                break;
-//        }
+
 
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
@@ -128,5 +87,23 @@ public class MainActivity extends AppCompatActivity { //implements View.OnClickL
                     return true;
                 }
             };
+
+
+
+    public void onClick (View v) {
+            Intent i;
+
+            switch (v.getId()) {
+                case R.id.c1:
+                    i = new Intent(this, MadAffald.class);
+                    startActivity(i);
+                    break;
+
+                case R.id.c2:
+                    i = new Intent(this, Papir.class);
+                    startActivity(i);
+                    break;
+            }
+        }
 }
 

@@ -10,6 +10,16 @@
         android:id="@+id/include"
         layout="@layout/toolbar" />
 
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerImageSlider"
+        android:layout_width="426dp"
+        android:layout_height="560dp"
+        android:layout_marginTop="80dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-8dp"/>
 
 </RelativeLayout>
 
