@@ -25,9 +25,9 @@
             android:autofillHints="Search"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Søg her"
+            android:hint="Søg her"
             android:textAlignment="textEnd"
-            android:textColor="@color/colorAccent" />
+            android:textColorHint="@color/colorAccent"/>
 
         <ImageView
             android:id="@+id/search_icon"
