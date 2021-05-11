@@ -57,13 +57,84 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
             });
 
         card3 = (CardView) v.findViewById(R.id.c3);
+        card3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(getActivity(), Pap.class);
+                in.putExtra("some", "some data");
+                startActivity(in);
+            }
+        });
+
         card4 = (CardView) v.findViewById(R.id.c4);
+        card4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(getActivity(), Metal.class);
+                in.putExtra("some", "some data");
+                startActivity(in);
+            }
+        });
+
         card5 = (CardView) v.findViewById(R.id.c5);
+        card5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(getActivity(), Glas.class);
+                in.putExtra("some", "some data");
+                startActivity(in);
+            }
+        });
+
         card6 = (CardView) v.findViewById(R.id.c6);
+        card6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(getActivity(), Plast.class);
+                in.putExtra("some", "some data");
+                startActivity(in);
+            }
+        });
+
         card7 = (CardView) v.findViewById(R.id.c7);
+        card7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(getActivity(), Tekstiler.class);
+                in.putExtra("some", "some data");
+                startActivity(in);
+            }
+        });
+
         card8 = (CardView) v.findViewById(R.id.c8);
+        card8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(getActivity(), Kartoner.class);
+                in.putExtra("some", "some data");
+                startActivity(in);
+            }
+        });
+
         card9 = (CardView) v.findViewById(R.id.c9);
+        card9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(getActivity(), Restaffald.class);
+                in.putExtra("some", "some data");
+                startActivity(in);
+            }
+        });
+
         card10 = (CardView) v.findViewById(R.id.c10);
+        card10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(getActivity(), FarligtAffald.class);
+                in.putExtra("some", "some data");
+                startActivity(in);
+            }
+        });
 
         return v;
 

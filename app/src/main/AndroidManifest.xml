@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Test2">
-        <activity android:name=".Papir"></activity>
+        <activity android:name=".FarligtAffald"></activity>
+        <activity android:name=".Restaffald" />
+        <activity android:name=".Kartoner" />
+        <activity android:name=".Tekstiler" />
+        <activity android:name=".Plast" />
+        <activity android:name=".Glas" />
+        <activity android:name=".Metal" />
+        <activity android:name=".Pap" />
+        <activity android:name=".Papir" />
         <activity android:name=".MadAffald" />
         <activity android:name=".MainActivity">
             <intent-filter>

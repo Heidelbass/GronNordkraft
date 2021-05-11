@@ -82,6 +82,46 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     i = new Intent(this, Papir.class);
                     startActivity(i);
                     break;
+
+                case R.id.c3:
+                    i = new Intent(this, Pap.class);
+                    startActivity(i);
+                    break;
+
+                case R.id.c4:
+                    i = new Intent(this, Metal.class);
+                    startActivity(i);
+                    break;
+
+                case R.id.c5:
+                    i = new Intent(this, Glas.class);
+                    startActivity(i);
+                    break;
+
+                case R.id.c6:
+                    i = new Intent(this, Plast.class);
+                    startActivity(i);
+                    break;
+
+                case R.id.c7:
+                    i = new Intent(this, Tekstiler.class);
+                    startActivity(i);
+                    break;
+
+                case R.id.c8:
+                    i = new Intent(this, Kartoner.class);
+                    startActivity(i);
+                    break;
+
+                case R.id.c9:
+                    i = new Intent(this, Restaffald.class);
+                    startActivity(i);
+                    break;
+
+                case R.id.c10:
+                    i = new Intent(this, FarligtAffald.class);
+                    startActivity(i);
+                    break;
             }
         }
 }
