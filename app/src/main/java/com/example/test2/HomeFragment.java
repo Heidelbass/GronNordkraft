@@ -34,7 +34,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_home2, container, false);
 
-
+// https://www.youtube.com/watch?v=TY-2Cx4IW9A How to open activity from fragment. By Oum Saokosal
         card1 = (CardView) v.findViewById(R.id.c1);
             card1.setOnClickListener(new View.OnClickListener() {
                 @Override

@@ -13,8 +13,12 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -23,12 +27,13 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    private static final String TAG = "MainActivity";
+    private ArrayList<WasteItem> wasteItems = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
 
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
@@ -37,6 +42,42 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                 new HomeFragment()).commit();
+
+        wasteItems.add(new WasteItem("pizzabakker", "restaffald"));
+        wasteItems.add(new WasteItem("pizza", "madaffald"));
+        wasteItems.add(new WasteItem("Banan", "madaffald"));
+        wasteItems.add(new WasteItem("håndsprit", "farligt affald"));
+        wasteItems.add(new WasteItem("mundbind", "restaffald"));
+        wasteItems.add(new WasteItem("æble", "madaffald"));
+        wasteItems.add(new WasteItem("papir", "pap"));
+        //hvis beskidt, så restaffald. Der kan implementeres en if-statement
+        wasteItems.add(new WasteItem("serviet", "restaffald"));
+
+
+        EditText searchfunction = findViewById(R.id.search);
+        searchfunction.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                // Log.d(TAG, "onTextChanged: "+ s);
+
+                for (int counter = 0; counter < wasteItems.size(); counter++)
+                {
+                    if (wasteItems.get(counter).getName().contains(s)) {
+                        Log.d(TAG, "onTextChanged:" + wasteItems.get(counter).getCategory());
+                    }
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
 
     }
 

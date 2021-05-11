@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/colorPrimaryDark">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -13,6 +16,26 @@
             android:layout_width="213dp"
             android:layout_height="37dp"
             android:src="@drawable/nordkraft" />
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="220dp"
+            android:autofillHints="Search"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Søg her"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorAccent" />
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/ic_baseline_search_24" />
 
     </RelativeLayout>
 </RelativeLayout>
