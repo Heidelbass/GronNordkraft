@@ -27,6 +27,7 @@
             android:inputType="textPersonName"
             android:hint="Søg her"
             android:textAlignment="textEnd"
+            android:textColor="@color/colorAccent"
             android:textColorHint="@color/colorAccent"/>
 
         <ImageView
