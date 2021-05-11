@@ -47,6 +47,15 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
 
 
         card2 = (CardView) v.findViewById(R.id.c2);
+            card2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                   Intent in = new Intent(getActivity(), Papir.class);
+                   in.putExtra("some", "some data");
+                   startActivity(in);
+                }
+            });
+
         card3 = (CardView) v.findViewById(R.id.c3);
         card4 = (CardView) v.findViewById(R.id.c4);
         card5 = (CardView) v.findViewById(R.id.c5);
