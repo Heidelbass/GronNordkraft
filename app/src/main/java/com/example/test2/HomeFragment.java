@@ -61,18 +61,9 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
     }
 
 
-    @Override
-    public void onClick(View v) {
-       // card1.setOnClickListener(this);
-        card2.setOnClickListener(this);
-        card3.setOnClickListener(this);
-        card4.setOnClickListener(this);
-        card5.setOnClickListener(this);
-        card6.setOnClickListener(this);
-        card7.setOnClickListener(this);
-        card8.setOnClickListener(this);
-        card9.setOnClickListener(this);
-        card10.setOnClickListener(this);
+   @Override
+  public void onClick(View v) {
+    //required empty constructor
 
-    }
+   }
 }
