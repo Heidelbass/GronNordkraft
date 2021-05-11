@@ -23,6 +23,10 @@ import java.util.List;
 
 public class HomeFragment extends Fragment implements View.OnClickListener{
 
+    public HomeFragment(){
+        //required empty public constructor
+    }
+
     public CardView card1, card2, card3, card4, card5, card6, card7, card8, card9, card10;
 
     @Nullable
@@ -32,6 +36,16 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
 
 
         card1 = (CardView) v.findViewById(R.id.c1);
+            card1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent in = new Intent(getActivity(), MadAffald.class);
+                    in.putExtra("some", "some data");
+                    startActivity(in);
+                }
+            });
+
+
         card2 = (CardView) v.findViewById(R.id.c2);
         card3 = (CardView) v.findViewById(R.id.c3);
         card4 = (CardView) v.findViewById(R.id.c4);
@@ -49,7 +63,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
-        card1.setOnClickListener(this);
+       // card1.setOnClickListener(this);
         card2.setOnClickListener(this);
         card3.setOnClickListener(this);
         card4.setOnClickListener(this);
