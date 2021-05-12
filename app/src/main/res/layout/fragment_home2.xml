@@ -5,10 +5,10 @@
     android:layout_height="wrap_content"
     android:background="#CFD7A6">
 
+
     <include
         android:id="@+id/include"
         layout="@layout/toolbar" />
-
 
     <GridLayout
         android:layout_width="match_parent"
