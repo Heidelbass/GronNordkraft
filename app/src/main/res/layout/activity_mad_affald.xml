@@ -5,20 +5,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MadAffald">
+    
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="177dp"
-        android:layout_marginTop="354dp"
-        android:layout_marginEnd="213dp"
-        android:layout_marginBottom="358dp"
-        android:text="MadAffald"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="70dp"
+            android:src="@drawable/madaffald"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="315dp"
+            android:layout_marginLeft="90dp"
+            android:text="Madaffald"
+            android:textSize="25dp"
+            android:textAlignment="center"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

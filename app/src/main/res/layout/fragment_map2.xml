@@ -21,5 +21,50 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-8dp"/>
 
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="560dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Skraldespandene er markeret som farvede prikker:"
+        android:textAlignment="center"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="610dp"
+        android:text="Lilla = plast "
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="610dp"
+        android:text="Sort = restaffald "
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="640dp"
+        android:text="Grøn = madaffald "
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="640dp"
+        android:text="Blå = papir "
+        android:textAlignment="center" />
+
+
+
+
 </RelativeLayout>
 
