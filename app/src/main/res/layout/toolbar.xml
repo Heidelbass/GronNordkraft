@@ -15,6 +15,7 @@
         <ImageView
             android:layout_width="190dp"
             android:layout_height="37dp"
+            android:layout_marginLeft="10dp"
             android:src="@drawable/nordkraft" />
 
         <EditText
