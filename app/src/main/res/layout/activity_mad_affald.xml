@@ -25,20 +25,19 @@
             android:layout_marginTop="315dp"
             android:layout_marginLeft="90dp"
             android:text="Madaffald"
-            android:textSize="25dp"
+            android:textSize="25sp"
             android:textAlignment="center"/>
 
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="360dp"
+            android:text="Madaffald er madvarer og madrester. Eksempler på madaffald:"
+            android:textAlignment="center"
+            android:textSize="17sp" />
 
 
     </RelativeLayout>
-
-
-
-
-
-
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
