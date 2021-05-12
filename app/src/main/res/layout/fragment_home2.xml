@@ -5,10 +5,10 @@
     android:layout_height="wrap_content"
     android:background="#CFD7A6">
 
+
     <include
         android:id="@+id/include"
         layout="@layout/toolbar" />
-
 
     <GridLayout
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
         android:layout_marginTop="90sp"
         android:layout_marginRight="10sp"
         android:columnCount="2"
-        android:rowCount="2">
+        android:rowCount="5">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/c1"
