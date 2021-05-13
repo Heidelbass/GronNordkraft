@@ -92,6 +92,7 @@ public class SearchActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Log.d(TAG, "onItemClick: ");
+                //a Toast is an unobtrusive class which shows a small/short message to the user
                 Toast.makeText(SearchActivity.this, wastenames.get(position), Toast.LENGTH_SHORT).show();
             }
         });
