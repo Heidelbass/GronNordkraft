@@ -19,7 +19,9 @@
         <activity android:name=".Pap" />
         <activity android:name=".Papir" />
         <activity android:name=".MadAffald" />
+        <activity android:name=".SearchActivity"/>
         <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
