@@ -18,6 +18,7 @@ import android.text.TextWatcher;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -54,30 +55,54 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         wasteItems.add(new WasteItem("serviet", "restaffald"));
 
 
-        EditText searchfunction = findViewById(R.id.search);
-        searchfunction.addTextChangedListener(new TextWatcher() {
+//        EditText searchfunction = findViewById(R.id.search);
+        Button btn = findViewById(R.id.button);
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                // Log.d(TAG, "onTextChanged: "+ s);
-
-                for (int counter = 0; counter < wasteItems.size(); counter++)
-                {
-                    if (wasteItems.get(counter).getName().contains(s)) {
-                        Log.d(TAG, "onTextChanged:" + wasteItems.get(counter).getCategory());
-                    }
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-
+            public void onClick(View v) {
+               OpenSearch();
             }
         });
+
+//        searchfunction.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+//            @Override
+//            public void onFocusChange(View v, boolean hasFocus) {
+//                Log.d(TAG, "onFocusChange: ");
+//                if (hasFocus) {
+//                    Fragment selectedFragment = new ListItem();
+//                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+//                            selectedFragment).commit();
+//                }
+//            }
+//        });
+
+//        searchfunction.addTextChangedListener(new TextWatcher() {
+//            @Override
+//            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+//
+//            }
+//
+//            @Override
+//            public void onTextChanged(CharSequence s, int start, int before, int count) {
+//                // Log.d(TAG, "onTextChanged: "+ s);
+//
+//                Fragment selectedFragment = new ListItem();
+//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+//                        selectedFragment).commit();
+//
+//                for (int counter = 0; counter < wasteItems.size(); counter++)
+//                {
+//                    if (wasteItems.get(counter).getName().contains(s)) {
+//                        Log.d(TAG, "onTextChanged:" + wasteItems.get(counter).getCategory());
+//                    }
+//                }
+//            }
+//
+//            @Override
+//            public void afterTextChanged(Editable s) {
+//
+//            }
+//        });
 
     }
 
@@ -165,5 +190,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     break;
             }
         }
+
+        private void OpenSearch(){
+            Intent in = new Intent( this, SearchActivity.class);
+            in.putExtra("some", "some data");
+            startActivity(in);
+    }
 }
 
