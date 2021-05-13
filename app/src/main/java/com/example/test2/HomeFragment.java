@@ -34,11 +34,13 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_home2, container, false);
 
-// https://www.youtube.com/watch?v=TY-2Cx4IW9A How to open activity from fragment. By Oum Saokosal
+// https://www.youtube.com/watch?v=TY-2Cx4IW9A How to open activity from fragment. By Oum Saokosal.
+        //In the making of a new activity, all information (toolbar and nav-bar dissapears)
         card1 = (CardView) v.findViewById(R.id.c1);
             card1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    //Hvor har vi getActivity for?
                     Intent in = new Intent(getActivity(), MadAffald.class);
                     in.putExtra("some", "some data");
                     startActivity(in);
