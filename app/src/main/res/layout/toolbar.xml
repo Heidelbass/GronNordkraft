@@ -20,24 +20,5 @@
 
 
 
-        <!--        <EditText-->
-<!--            android:id="@+id/search"-->
-<!--            android:layout_width="170dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="220dp"-->
-<!--            android:autofillHints="Search"-->
-<!--            android:drawableRight="@drawable/ic_baseline_search_24"-->
-<!--            android:ems="10"-->
-<!--            android:hint="Søg her  "-->
-<!--            android:inputType="textPersonName"-->
-<!--            android:textAlignment="textEnd"-->
-<!--            android:textColor="@color/colorAccent"-->
-<!--            android:textColorHint="@color/colorAccent" />-->
-
-
-
-
-
-
     </RelativeLayout>
 </RelativeLayout>

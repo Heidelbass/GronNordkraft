@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         wasteItems.add(new WasteItem("serviet", "restaffald"));
 
 
-//        EditText searchfunction = findViewById(R.id.search);
+
         ImageButton btn = findViewById(R.id.button);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,33 +77,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //            }
 //        });
 
-//        searchfunction.addTextChangedListener(new TextWatcher() {
-//            @Override
-//            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-//
-//            }
-//
-//            @Override
-//            public void onTextChanged(CharSequence s, int start, int before, int count) {
-//                // Log.d(TAG, "onTextChanged: "+ s);
-//
-//                Fragment selectedFragment = new ListItem();
-//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-//                        selectedFragment).commit();
-//
-//                for (int counter = 0; counter < wasteItems.size(); counter++)
-//                {
-//                    if (wasteItems.get(counter).getName().contains(s)) {
-//                        Log.d(TAG, "onTextChanged:" + wasteItems.get(counter).getCategory());
-//                    }
-//                }
-//            }
-//
-//            @Override
-//            public void afterTextChanged(Editable s) {
-//
-//            }
-//        });
+
 
     }
 
