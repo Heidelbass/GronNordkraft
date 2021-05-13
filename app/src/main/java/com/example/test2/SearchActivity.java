@@ -46,9 +46,17 @@ public class SearchActivity extends AppCompatActivity {
         wasteItems.add(new WasteItem("håndsprit", "farligt affald"));
         wasteItems.add(new WasteItem("mundbind", "restaffald"));
         wasteItems.add(new WasteItem("æble", "madaffald"));
-        wasteItems.add(new WasteItem("papir", "pap"));
-        //hvis beskidt, så restaffald. Der kan implementeres en if-statement
+        wasteItems.add(new WasteItem("papir", "papir"));
+        wasteItems.add(new WasteItem("glasflaske", "glas"));
+        wasteItems.add(new WasteItem("juicekarton", "kartoner"));
+        wasteItems.add(new WasteItem("Appelsin", "madaffald"));
+        wasteItems.add(new WasteItem("madrester", "madaffald"));
+        wasteItems.add(new WasteItem("magnet", "metal"));
+        wasteItems.add(new WasteItem("kaffepose", "restaffald"));
         wasteItems.add(new WasteItem("serviet", "restaffald"));
+        wasteItems.add(new WasteItem("plastik bestik", "plast"));
+        wasteItems.add(new WasteItem("æggebakke i pap", "pap"));
+
 
                 searchfunction.addTextChangedListener(new TextWatcher() {
             @Override
@@ -93,9 +101,75 @@ public class SearchActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Log.d(TAG, "onItemClick: ");
                 Toast.makeText(SearchActivity.this, wastenames.get(position), Toast.LENGTH_SHORT).show();
+
+                for (int counter = 0; counter < wasteItems.size(); counter++)
+                {
+                    if (wasteItems.get(counter).getName()== wastenames.get(position)){
+                        Log.d(TAG, "onTextChanged:" + wasteItems.get(counter).getCategory());
+
+                        change(wasteItems.get(counter).getCategory());
+                    }
+                }
+
+
             }
         });
 
     }
 
+    private void change (String category){
+        Intent i;
+
+        switch (category) {
+            case "madaffald":
+                i = new Intent(this, MadAffald.class);
+                startActivity(i);
+                break;
+
+            case "papir":
+                i = new Intent(this, Papir.class);
+                startActivity(i);
+                break;
+
+            case "pap":
+                i = new Intent(this, Pap.class);
+                startActivity(i);
+                break;
+
+            case "metal":
+                i = new Intent(this, Metal.class);
+                startActivity(i);
+                break;
+
+            case "glas":
+                i = new Intent(this, Glas.class);
+                startActivity(i);
+                break;
+
+            case "plast":
+                i = new Intent(this, Plast.class);
+                startActivity(i);
+                break;
+
+            case "tekstiler":
+                i = new Intent(this, Tekstiler.class);
+                startActivity(i);
+                break;
+
+            case "kartoner":
+                i = new Intent(this, Kartoner.class);
+                startActivity(i);
+                break;
+
+            case "restaffald":
+                i = new Intent(this, Restaffald.class);
+                startActivity(i);
+                break;
+
+            case "farligt affald":
+                i = new Intent(this, FarligtAffald.class);
+                startActivity(i);
+                break;
+        }
+    }
 }
