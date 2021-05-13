@@ -18,6 +18,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.widget.Toast;
 
 public class SearchActivity extends AppCompatActivity {
 
@@ -91,6 +92,7 @@ public class SearchActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Log.d(TAG, "onItemClick: ");
+                Toast.makeText(SearchActivity.this, wastenames.get(position), Toast.LENGTH_SHORT).show();
             }
         });
 
