@@ -32,7 +32,7 @@
             android:layout_height="300dp"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="360dp"
-            android:text="Her smides tomme glas og flasker ud. Det skal smides i en container for sig selv, da det kan bruges igen. Flasker med pant er selvfølgelig bedst at aflevere i supermarkedet.\n Eksempler: \n - Glasflasker \n - Glas uden madrester \n - vinflasker \n - Drikkeglas "
+            android:text="Her smides tomme glas og flasker ud. Det skal smides i en container for sig selv, da det kan bruges igen. Flasker med pant er selvfølgelig bedst at aflevere i supermarkedet.\n\n Eksempler: \n - Glasflasker \n - Glas uden madrester \n - vinflasker \n - Drikkeglas "
             android:textAlignment="center"
             android:textSize="17sp" />
 

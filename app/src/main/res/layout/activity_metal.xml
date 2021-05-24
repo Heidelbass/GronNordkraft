@@ -32,7 +32,7 @@
             android:layout_height="300dp"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="360dp"
-            android:text="Metal affald indebærer alle typer af metal, såsom jern, kobber, aluminium osv."
+            android:text="Metal affald indebærer alle typer af metal, såsom jern, kobber, aluminium osv. \n \n Det er emballage og genstande som primært består jern og metal, og som ikke indeholder elektronisk eller farligt affald. "
             android:textAlignment="center"
             android:textSize="17sp" />
 

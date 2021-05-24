@@ -32,7 +32,7 @@
             android:layout_height="300dp"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="360dp"
-            android:text="Kartoner er både drikkekartoner og madkartoner"
+            android:text="Kartoner er både drikkekartoner og madkartoner \n\n Eksempler: \n - Mælkekartoner \n - Yoghurt \n - fløde \n - juice "
             android:textAlignment="center"
             android:textSize="17sp" />
 

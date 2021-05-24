@@ -45,15 +45,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                 new HomeFragment()).commit();
 
-        wasteItems.add(new WasteItem("pizzabakker", "restaffald"));
-        wasteItems.add(new WasteItem("pizza", "madaffald"));
-        wasteItems.add(new WasteItem("Banan", "madaffald"));
-        wasteItems.add(new WasteItem("håndsprit", "farligt affald"));
-        wasteItems.add(new WasteItem("mundbind", "restaffald"));
-        wasteItems.add(new WasteItem("æble", "madaffald"));
-        wasteItems.add(new WasteItem("papir", "pap"));
-        //hvis beskidt, så restaffald. Der kan implementeres en if-statement
-        wasteItems.add(new WasteItem("serviet", "restaffald"));
+
+
 
 
 
@@ -64,19 +57,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                OpenSearch();
             }
         });
-
-//        searchfunction.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-//            @Override
-//            public void onFocusChange(View v, boolean hasFocus) {
-//                Log.d(TAG, "onFocusChange: ");
-//                if (hasFocus) {
-//                    Fragment selectedFragment = new ListItem();
-//                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-//                            selectedFragment).commit();
-//                }
-//            }
-//        });
-
 
 
     }

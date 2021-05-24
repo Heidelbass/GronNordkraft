@@ -6,4 +6,37 @@
     android:layout_height="match_parent"
     tools:context=".Restaffald">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="70dp"
+            android:src="@drawable/restaffald"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="315dp"
+            android:layout_marginLeft="90dp"
+            android:text="Restaffald"
+            android:textSize="25sp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="360dp"
+            android:text=" Restaffald er det affald, der er tilbage, når du har sorteret madaffald, pap, papir, glas osv. \n\n Eksempler: \n- Beskidt papir eller pap \n- Pizzabakker \n - Flamingo \n- Hygiejneaffald "
+            android:textAlignment="center"
+            android:textSize="17sp" />
+
+
+    </RelativeLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

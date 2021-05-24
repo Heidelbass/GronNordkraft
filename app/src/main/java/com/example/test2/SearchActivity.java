@@ -41,21 +41,32 @@ public class SearchActivity extends AppCompatActivity {
 
         wasteItems.add(new WasteItem("pizzabakker", "restaffald"));
         wasteItems.add(new WasteItem("pizza", "madaffald"));
-        wasteItems.add(new WasteItem("Banan", "madaffald"));
-        wasteItems.add(new WasteItem("Bananskrald", "madaffald"));
+        wasteItems.add(new WasteItem("appelsinskræl", "madaffald"));
+        wasteItems.add(new WasteItem("banan", "madaffald"));
         wasteItems.add(new WasteItem("håndsprit", "farligt affald"));
+        wasteItems.add(new WasteItem("sprit", "farligt affald"));
         wasteItems.add(new WasteItem("mundbind", "restaffald"));
         wasteItems.add(new WasteItem("æble", "madaffald"));
+        wasteItems.add(new WasteItem("juicebrik", "kartoner"));
+        wasteItems.add(new WasteItem("olie", "farligt affald"));
+        wasteItems.add(new WasteItem("blyant", "restaffald"));
+        wasteItems.add(new WasteItem("kuglepen", "restaffald"));
+        wasteItems.add(new WasteItem("blækpatron", "restaffald"));
+        wasteItems.add(new WasteItem("teblad", "restaffald"));
         wasteItems.add(new WasteItem("papir", "papir"));
-        wasteItems.add(new WasteItem("glasflaske", "glas"));
-        wasteItems.add(new WasteItem("juicekarton", "kartoner"));
-        wasteItems.add(new WasteItem("Appelsin", "madaffald"));
-        wasteItems.add(new WasteItem("madrester", "madaffald"));
-        wasteItems.add(new WasteItem("magnet", "metal"));
-        wasteItems.add(new WasteItem("kaffepose", "restaffald"));
+        wasteItems.add(new WasteItem("æggebakke", "pap"));
+        wasteItems.add(new WasteItem("farligt affald", "farligt affald"));
+        wasteItems.add(new WasteItem("glas", "glas"));
+        wasteItems.add(new WasteItem("kartoner", "kartoner"));
+        wasteItems.add(new WasteItem("madaffald", "madaffald"));
+        wasteItems.add(new WasteItem("metal", "metal"));
+        wasteItems.add(new WasteItem("pap", "pap"));
+        wasteItems.add(new WasteItem("beskidt eller vådt pap", "restaffald"));
+        wasteItems.add(new WasteItem("plast", "plast"));
+        wasteItems.add(new WasteItem("restaffald", "restaffald"));
+        wasteItems.add(new WasteItem("tekstiler", "tekstiler"));
+        wasteItems.add(new WasteItem("tøj", "tekstiler"));
         wasteItems.add(new WasteItem("serviet", "restaffald"));
-        wasteItems.add(new WasteItem("plastik bestik", "plast"));
-        wasteItems.add(new WasteItem("æggebakke i pap", "pap"));
 
 
                 searchfunction.addTextChangedListener(new TextWatcher() {

@@ -32,7 +32,7 @@
             android:layout_height="300dp"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="360dp"
-            android:text="Her smides pap ud. Det skal være pap som ikke har været i kontakt med mad. F.eks. en pizzabakke skal ikke smides ud i pap, men restaffald."
+            android:text="Her smides pap ud. Det skal være pap som ikke har været i kontakt med mad. F.eks. en pizzabakke skal ikke smides ud i pap, men restaffald. \n \n Eksempler: \n - Æggebakker \n - Paplader \n - Papæsker \n - Skotøjsæsker "
             android:textAlignment="center"
             android:textSize="17sp" />
 
