@@ -46,10 +46,6 @@ public class MainActivity extends AppCompatActivity {
                 new HomeFragment()).commit();
 
 
-
-
-
-
         ImageButton btn = findViewById(R.id.button);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
