@@ -58,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
 // BottomNavigationView with Fragment: https://www.youtube.com/watch?v=tPV8xA7m-iw
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -83,9 +82,6 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 }
             };
-
-
-
 
         private void OpenSearch(){
             Intent in = new Intent( this, SearchActivity.class);

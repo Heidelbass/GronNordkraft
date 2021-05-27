@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 public class FarligtAffald extends AppCompatActivity {
-
+// takes input from bundle (other activities)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
