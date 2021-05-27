@@ -9,4 +9,4 @@ public class SliderItem {
     public int getImage() { return image; }
 }
 
-//  Image slider using View Pager 2:  https://www.youtube.com/watch?v=DocKN8yX9qc
+//  Image slider using View Pager 2:  https://www.youtube.com/watch?v=iA9iqygq11Q

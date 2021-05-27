@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#CFD7A6">
 
-
+<!--    How to add a toolbar: https://www.youtube.com/watch?v=DMkzIOLppf4-->
     <include
         android:id="@+id/include"
         layout="@layout/toolbar" />

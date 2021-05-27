@@ -13,7 +13,7 @@ import com.makeramen.roundedimageview.RoundedImageView;
 import java.util.List;
 
 public class SliderAdapter extends RecyclerView.Adapter<SliderAdapter.SliderViewHolder>{
-//Image slider using View Pager 2:  https://www.youtube.com/watch?v=DocKN8yX9qc
+//Image slider using View Pager 2:  https://www.youtube.com/watch?v=iA9iqygq11Q
     private List<SliderItem> slideritems;
     private ViewPager2 ViewPager2;
 
