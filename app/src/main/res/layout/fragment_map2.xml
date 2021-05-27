@@ -11,6 +11,17 @@
         android:id="@+id/include"
         layout="@layout/toolbar" />
 
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Map 1 = Level 1            Map 2 = Level 3"
+        android:textAlignment="center"
+        android:textSize="15dp" />
+
+<!--    Image slider using View Pager 2:  https://www.youtube.com/watch?v=DocKN8yX9qc-->
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPagerImageSlider"
         android:layout_width="match_parent"
@@ -20,7 +31,8 @@
         android:paddingEnd="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-8dp"/>
+        tools:layout_editor_absoluteX="-8dp"
+        />
 
     <TextView
         android:layout_width="280dp"

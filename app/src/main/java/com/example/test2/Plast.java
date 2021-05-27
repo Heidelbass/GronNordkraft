@@ -12,12 +12,6 @@ public class Plast extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plast);
 
-        Bundle bundle = getIntent().getExtras();
-        if(bundle != null){
-            if (bundle.getString("Hello World!") != null)
-                Toast.makeText(getApplicationContext(),
-                        "data:" + "Hello :)",
-                        Toast.LENGTH_SHORT).show();
+
         }
     }
-}

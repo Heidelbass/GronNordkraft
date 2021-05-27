@@ -12,12 +12,5 @@ public class Tekstiler extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tekstiler);
 
-        Bundle bundle = getIntent().getExtras();
-        if(bundle != null){
-            if (bundle.getString("Hello World!") != null)
-                Toast.makeText(getApplicationContext(),
-                        "data:" + "Hello :)",
-                        Toast.LENGTH_SHORT).show();
         }
     }
-}

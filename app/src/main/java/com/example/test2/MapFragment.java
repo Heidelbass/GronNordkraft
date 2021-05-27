@@ -27,7 +27,7 @@ public class MapFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v =  inflater.inflate(R.layout.fragment_map2, container, false);
-
+//Image slider using View Pager 2:  https://www.youtube.com/watch?v=DocKN8yX9qc
         viewPager2 = v.findViewById(R.id.viewPagerImageSlider);
 
         List<SliderItem> sliderItems = new ArrayList<>();

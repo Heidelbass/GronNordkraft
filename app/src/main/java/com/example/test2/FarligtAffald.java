@@ -12,12 +12,6 @@ public class FarligtAffald extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_farligt_affald);
 
-        Bundle bundle = getIntent().getExtras();
-        if(bundle != null){
-            if (bundle.getString("Hello World!") != null)
-                Toast.makeText(getApplicationContext(),
-                        "data:" + "Hello :)",
-                        Toast.LENGTH_SHORT).show();
         }
     }
-}
+

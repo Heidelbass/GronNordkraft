@@ -27,7 +27,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
     private ArrayList<WasteItem> wasteItems = new ArrayList<>();
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+// BottomNavigationView with Fragment: https://www.youtube.com/watch?v=tPV8xA7m-iw
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         bottomNav.setOnNavigationItemSelectedListener(navListener);
 
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
-
+// BottomNavigationView with Fragment: https://www.youtube.com/watch?v=tPV8xA7m-iw
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override
@@ -90,61 +90,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
-    public void onClick (View v) {
-            Intent i;
-
-            switch (v.getId()) {
-                case R.id.c1:
-                    i = new Intent(this, MadAffald.class);
-                    startActivity(i);
-                    break;
-
-                case R.id.c2:
-                    i = new Intent(this, Papir.class);
-                    startActivity(i);
-                    break;
-
-                case R.id.c3:
-                    i = new Intent(this, Pap.class);
-                    startActivity(i);
-                    break;
-
-                case R.id.c4:
-                    i = new Intent(this, Metal.class);
-                    startActivity(i);
-                    break;
-
-                case R.id.c5:
-                    i = new Intent(this, Glas.class);
-                    startActivity(i);
-                    break;
-
-                case R.id.c6:
-                    i = new Intent(this, Plast.class);
-                    startActivity(i);
-                    break;
-
-                case R.id.c7:
-                    i = new Intent(this, Tekstiler.class);
-                    startActivity(i);
-                    break;
-
-                case R.id.c8:
-                    i = new Intent(this, Kartoner.class);
-                    startActivity(i);
-                    break;
-
-                case R.id.c9:
-                    i = new Intent(this, Restaffald.class);
-                    startActivity(i);
-                    break;
-
-                case R.id.c10:
-                    i = new Intent(this, FarligtAffald.class);
-                    startActivity(i);
-                    break;
-            }
-        }
 
         private void OpenSearch(){
             Intent in = new Intent( this, SearchActivity.class);

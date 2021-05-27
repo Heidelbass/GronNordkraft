@@ -11,6 +11,8 @@
         android:id="@+id/include"
         layout="@layout/toolbar" />
 
+<!--    CardView in Android Studio: https://www.youtube.com/watch?v=JB71Tnep_Vk-->
+
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

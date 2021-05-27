@@ -77,17 +77,14 @@ public class SearchActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                // Log.d(TAG, "onTextChanged: "+ s);
                 wastenames.clear();
                 for (int counter = 0; counter < wasteItems.size(); counter++)
                 {
                     if (wasteItems.get(counter).getName().contains(s)) {
                         wastenames.add(wasteItems.get(counter).getName())    ;
-//                        Log.d(TAG, "onTextChanged:" + wasteItems.get(counter).getCategory());
                     }
                 }
                 UpdateSearch(wastenames);
-
             }
 
             @Override
