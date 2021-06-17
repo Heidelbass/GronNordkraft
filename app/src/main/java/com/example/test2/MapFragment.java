@@ -23,25 +23,28 @@ public class MapFragment extends Fragment {
 
     private ViewPager2 viewPager2;
 
-    @Nullable
+    @Nullable // = Denotes that a parameter, field or method return value can be null
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {//LayoutInflater =  it takes an XML file as input and builds the View objects from it
         View v =  inflater.inflate(R.layout.fragment_map2, container, false);
 //Image slider using View Pager 2:  https://www.youtube.com/watch?v=DocKN8yX9qc
         viewPager2 = v.findViewById(R.id.viewPagerImageSlider);
 
-        List<SliderItem> sliderItems = new ArrayList<>();
-        sliderItems.add(new SliderItem(R.drawable.niv1));
+
+        List<SliderItem> sliderItems = new ArrayList<>(); //The arraylist of slideritems
+        sliderItems.add(new SliderItem(R.drawable.niv1)); //Connects the new SliderItem with our picture.
         sliderItems.add(new SliderItem(R.drawable.niv3));
 
 
         viewPager2.setAdapter(new SliderAdapter(sliderItems, viewPager2));
 
+        //Adapting the pictures to the screen
         viewPager2.setClipToPadding(false);
         viewPager2.setClipChildren(false);
-        viewPager2.setOffscreenPageLimit(3);
-        viewPager2.getChildAt(0).setOverScrollMode(RecyclerView.OVER_SCROLL_NEVER);
+        //viewPager2.setOffscreenPageLimit(3);
+        viewPager2.getChildAt(0).setOverScrollMode(RecyclerView.OVER_SCROLL_NEVER); //This makes sure the scrollin doesn't start over or that it doesn't stop scrolling.
 
+        //Support class that helps set up viewPager
         CompositePageTransformer compositePageTransformer = new CompositePageTransformer();
         compositePageTransformer.addTransformer(new MarginPageTransformer(40));
         compositePageTransformer.addTransformer(new ViewPager2.PageTransformer() {

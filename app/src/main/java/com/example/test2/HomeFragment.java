@@ -27,20 +27,21 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
         //required empty public constructor
     }
 
-    public CardView card1, card2, card3, card4, card5, card6, card7, card8, card9, card10;
+    public CardView card1, card2, card3, card4, card5, card6, card7, card8, card9, card10; //making object for the cardviews
 
-    @Nullable
+    @Nullable // = Denotes that a parameter, field or method return value can be null
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) { //LayoutInflater =  it takes an XML file as input and builds the View objects from it
         View v = inflater.inflate(R.layout.fragment_home2, container, false);
 
 // https://www.youtube.com/watch?v=TY-2Cx4IW9A How to open activity from fragment. By Oum Saokosal.
-        //In the making of a new activity, all information (toolbar and nav-bar dissapears)
-        card1 = (CardView) v.findViewById(R.id.c1);
+        //In the making of a new activity, all information (toolbar and nav-bar disapears)
+        //The code below is the code to click on the categories
+
+        card1 = (CardView) v.findViewById(R.id.c1); // we refer to the category by the id of the category.
             card1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    //Hvor har vi getActivity for?
                     Intent in = new Intent(getActivity(), MadAffald.class);
                     in.putExtra("some", "some data");
                     startActivity(in);
@@ -51,8 +52,8 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
         card2 = (CardView) v.findViewById(R.id.c2);
             card2.setOnClickListener(new View.OnClickListener() {
                 @Override
-                public void onClick(View v) {
-                   Intent in = new Intent(getActivity(), Papir.class);
+                public void onClick(View v) { //In the onClick method we make a new intent with the parameters: getActivity and Papir.class
+                   Intent in = new Intent(getActivity(), Papir.class); //intent is an object that binds two activities. We use intent with StartActivity to start a new activity and connect it to a specific class
                    in.putExtra("some", "some data");
                    startActivity(in);
                 }

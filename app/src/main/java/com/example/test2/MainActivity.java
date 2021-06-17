@@ -42,16 +42,17 @@ public class MainActivity extends AppCompatActivity {
         bottomNav.setOnNavigationItemSelectedListener(navListener);
 
 
+        //This code makes sure that the home page is Home. So when you open the app, the Home fragment page opens up
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                 new HomeFragment()).commit();
 
-
+// Button to the search function. With this onClick method we can click on the button and it will open the search function
         ImageButton btn = findViewById(R.id.button);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                OpenSearch();
-            }
+            } //Here it activates the method Open Search
         });
 
 
@@ -60,12 +61,12 @@ public class MainActivity extends AppCompatActivity {
 
 
 // BottomNavigationView with Fragment: https://www.youtube.com/watch?v=tPV8xA7m-iw
-    private BottomNavigationView.OnNavigationItemSelectedListener navListener =
+    private BottomNavigationView.OnNavigationItemSelectedListener navListener = // This code listenes to the user input
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override
-                public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                public boolean onNavigationItemSelected(@NonNull MenuItem item) { // If there is a input, the code will run through this switch statement
                     Fragment selectedFragment = null;
-
+//The switch statement makes sure the app can switch between the two fragments: Map and Home
                     switch (item.getItemId()) {
                         case R.id.nav_home:
                             selectedFragment = new HomeFragment();
@@ -76,20 +77,20 @@ public class MainActivity extends AppCompatActivity {
                             break;
 
                     }
-
+                //Here the fragment is selected and the code will replace the current fragment with the chosen fragment
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                             selectedFragment).commit();
 
-                    return true;
+                    return true; //returns the selected fragment
                 }
             };
 
 
 
-
+// This method is connected to SearchActivity.class.
         private void OpenSearch(){
             Intent in = new Intent( this, SearchActivity.class);
-            in.putExtra("some", "some data");
+            in.putExtra("some", "some data"); //User input
             startActivity(in);
     }
 }

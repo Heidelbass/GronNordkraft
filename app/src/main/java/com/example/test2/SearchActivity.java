@@ -71,7 +71,7 @@ public class SearchActivity extends AppCompatActivity {
 
                 searchfunction.addTextChangedListener(new TextWatcher() {
             @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) { //Default
 
             }
 
@@ -88,7 +88,7 @@ public class SearchActivity extends AppCompatActivity {
             }
 
             @Override
-            public void afterTextChanged(Editable s) {
+            public void afterTextChanged(Editable s) { //Default
 
             }
         });
