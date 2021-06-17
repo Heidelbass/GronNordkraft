@@ -37,8 +37,6 @@ public class SearchActivity extends AppCompatActivity {
 
         ArrayList<String> wastenames = new ArrayList<>();
 
-
-
         wasteItems.add(new WasteItem("pizzabakker", "restaffald"));
         wasteItems.add(new WasteItem("pizza", "madaffald"));
         wasteItems.add(new WasteItem("appelsinskræl", "madaffald"));

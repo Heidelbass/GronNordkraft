@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 public class FarligtAffald extends AppCompatActivity {
-
+// takes input from bundle (other activities)
     @Override
     protected void onCreate(Bundle savedInstanceState) { // Bundle = initialize activity
         super.onCreate(savedInstanceState); // Super is a keyword that indicates a class inherits from the super class. In this case the oncreate class inherits from the public class 'Farlig affald'

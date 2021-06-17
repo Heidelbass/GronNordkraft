@@ -59,7 +59,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
 // BottomNavigationView with Fragment: https://www.youtube.com/watch?v=tPV8xA7m-iw
     private BottomNavigationView.OnNavigationItemSelectedListener navListener = // This code listenes to the user input
             new BottomNavigationView.OnNavigationItemSelectedListener() {
